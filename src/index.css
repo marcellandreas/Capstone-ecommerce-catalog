@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --men-color: #002772;
+  --women-color: #720060;
+  --text-color: #1e1e1e;
+  --p-color: #3f3f3f;
+  --men-section-color: #d6e6ff;
+  --women-section-color: #fde2ff;
+  --unavailable-section-color: #dcdcdc;
+  --white: #fff;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+button {
+  width: 259px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  color: var(--white);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  outline: none;
+  border: none;
+}
+
+img {
+  width: 320px;
+  height: 400px;
+}
+
+/* Product category Men's dan Women's */
+.card-product {
+  margin: auto;
+  height: 580px;
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  background: var(--white);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.title-product {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+
+.second-product {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin-bottom: 11px;
+  color: var(--p-color);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.description-product {
+  color: var(--text-color);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.price-product {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+
+/* category selain men's dan women's */
+.unavailable {
+  /* background-color: #1e1e1e; */
+  height: 580px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.unavailable-img {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  background-size: cover;
+  background-position: 20%;
+  height: 439px;
+  width: 100%;
+  z-index: -999px;
+  /* background-color: #1e1e1e; */
+}
+.unavailable-text {
+  color: var(--text-color);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 12px;
+}
+
+.unvailable-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 18px;
+}
